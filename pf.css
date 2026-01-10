@@ -1,0 +1,110 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins",sans-serif;
+}
+
+body{
+  background:#0d0d0d;
+  color:#fff;
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:40px auto;
+  display:grid;
+  grid-template-columns:350px 1fr;
+  gap:30px;
+}
+
+.card{
+  background:#111;
+  padding:25px;
+  border-radius:18px;
+  position:relative;
+}
+
+.profile-card{
+  text-align:center;
+}
+
+.profile-card img{
+  width:100%;
+  border-radius:14px;
+  margin-bottom:15px;
+}
+
+.role{
+  color:#bfbfbf;
+  margin-bottom:15px;
+}
+
+.socials{
+  text-align:center;
+  margin-top:20px;
+}
+
+.socials a{
+  color:#fff;
+  margin:0 10px;
+  font-size:28px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.socials a:hover{
+  color:#ff3d72;
+  transform: scale(1.2);
+}
+
+.info-box{
+  margin-top:18px;
+  padding-top:10px;
+  border-top:1px solid #222;
+}
+
+.subtitle{
+  margin:25px 0 10px;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+}
+
+.service-card{
+  background:#0f0f0f;
+  padding:16px;
+  border-radius:14px;
+}
+
+.buttons{
+  margin-top:25px;
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  background:#ff3d72;
+  padding:10px 18px;
+  border-radius:10px;
+  color:#fff;
+  text-decoration:none;
+  border:none;
+  cursor:pointer;
+}
+
+.btn:hover{
+  opacity:.85;
+}
+
+.page{
+  display:none;
+}
+
+.page.active{
+  display:block;
+}

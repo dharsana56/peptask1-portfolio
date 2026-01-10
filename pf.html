@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Portfolio</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p1CmYzZV0UVv1j6/13H5x4f6mHBqI6B1h3+u1gXW3+tkU6Dl7Uu0lG0wZzF8Rv1YMFfFyyXcyVbHgN0hkJt+3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="pf.css">
+</head>
+
+<body>
+
+
+<section id="home" class="page active">
+  <div class="container">
+
+    <div class="card profile-card">
+      <img src="photo.png">
+
+      <h2>Dharsana Sharon C</h2>
+      <p class="role">Student of ST. JOSEPH'S INSTITUTE OF TECHNOLOGY</p>
+
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/dharsana-sharon-c-122a52326" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/dharsana56" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+
+      <div class="info-box">
+        <span>📞 Phone</span>
+        <p>+91 6385407003</p>
+      </div>
+
+      <div class="info-box">
+        <span>✉️ Email</span>
+        <p>dharsanasharon10@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h1>About Me</h1>
+      <p>
+        I am a Computer Science Engineering student at St. Joseph’s Institute of Technology, actively building my technical skills and gaining hands-on experience in software and web development.
+      </p>
+
+      <h2 class="subtitle">What I Do</h2>
+      <div class="services">
+        <div class="service-card">
+          <h3>UI/UX Design</h3>
+          <p>Designing modern and user-friendly layouts.</p>
+        </div>
+        <div class="service-card">
+          <h3>App Development</h3>
+          <p>Building simple and responsive apps.</p>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="btn" onclick="showPage('resume')">My Resume</button>
+        <button class="btn" onclick="showPage('certificates')">My Certificates</button>
+      </div>
+
+      
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/dharsana-sharon-c-122a52326" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/dharsana56" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="resume" class="page">
+  <div class="container">
+    <div class="card">
+      <h1>Upload Your Resume</h1>
+      <p>Select and attach your resume.</p>
+      <input type="file" accept=".pdf,.doc,.docx">
+
+      <div class="buttons">
+        <button class="btn" onclick="showPage('home')">⬅ Back</button>
+      </div>
+
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/dharsana-sharon-c-122a52326" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/dharsana56" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="certificates" class="page">
+  <div class="container">
+    <div class="card">
+      <h1>Upload Your Certificates</h1>
+      <input type="file" multiple accept=".jpg,.png,.jpeg,.pdf">
+
+      <div class="buttons">
+        <button class="btn" onclick="showPage('home')">⬅ Back</button>
+      </div>
+
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/dharsana-sharon-c-122a52326" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/dharsana56" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+function showPage(id){
+  document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+}
+</script>
+
+</body>
+</html>
