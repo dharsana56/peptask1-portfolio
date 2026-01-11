@@ -1,143 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharsana Sharon Portfolio</title>
+    <link rel="stylesheet"href="portfolio.css">
+    <title>Dharsana Sharon | Web Developer Portfolio</title>
+
+<meta name="description" content="Portfolio of Dharsana Sharon, a CSE student showcasing projects, skills, and web development work.">
+
+<meta name="keywords" content="Dharsana Sharon, portfolio, web developer, CSE student">
+
+<meta name="author" content="Dharsana Sharon">
 
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p1CmYzZV0UVv1j6/13H5x4f6mHBqI6B1h3+u1gXW3+tkU6Dl7Uu0lG0wZzF8Rv1YMFfFyyXcyVbHgN0hkJt+3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-<link rel="stylesheet" href="pf.css">
 </head>
-
 <body>
+    
+  <nav>
+  <a href="#home">Home</a>
+  <a href="#projects">Projects</a>
+  <a href="https://your-portfolio-link.com" target="_blank">Portfolio</a>
+</nav>
+
+    <header class="navbar">
+        <div class="logo">My-portfolio</div>
+        
+        <div class="menu-toggle"id="menu-toggle">
+            <span></span>
+        <span></span>
+        <span></span>
+</div>
+<nav id="nav-menu">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
 
 
-<section id="home" class="page active">
-  <div class="container">
 
-    <div class="card profile-card">
-      <img src="photo.png">
+    </ul>
+</nav>
+        
+    </header>
+    <section id="home" class="home">
+        <div class="profile-img">
+            <img src="photo.png"alt="Dharsana Sharon C">
 
-      <h2>Dharsana Sharon C</h2>
-      <p class="role">Student of ST. JOSEPH'S INSTITUTE OF TECHNOLOGY</p>
-
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/dharsana-sharon-c-122a52326" target="_blank">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/dharsana56" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-
-      <div class="info-box">
-        <span>📞 Phone</span>
-        <p>+91 6385407003</p>
-      </div>
-
-      <div class="info-box">
-        <span>✉️ Email</span>
-        <p>dharsanasharon10@gmail.com</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <h1>About Me</h1>
-      <p>
-        I am a Computer Science Engineering student at St. Joseph’s Institute of Technology, actively building my technical skills and gaining hands-on experience in software and web development.
-      </p>
-
-      <h2 class="subtitle">What I Do</h2>
-      <div class="services">
-        <div class="service-card">
-          <h3>UI/UX Design</h3>
-          <p>Designing modern and user-friendly layouts.</p>
         </div>
-        <div class="service-card">
-          <h3>App Development</h3>
-          <p>Building simple and responsive apps.</p>
+        <h2 class="name">Hi,I'm<span>Dharsana Sharon C</span></h2>
+        <h3 class="role">Computer Science Student at ST. JOSEPH'S INSTITUTE OF TECHNOLOGY</h3>
+        <h4 class="role2">Full Stack Developer </h4>
+        <p class="about-text">
+            I am a Computer Science Student eager to learn new technologies and develop real world web solutions.
+        </p>
+    </section>
+    <section id="about" class="about-section">
+        <h2>About me</h2>
+        <p>
+            I am Dharsana Sharon C a passionate Computer Science student with a strong interest in Full Stack Development. I enjoy building responsive and user-friendly web application and continuously improving my technical skills.I am eager to work on projects and grow as a software developer.
+        </p>
+
+    </section>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <i class="fa-brands fa-html5 html"></i>
+                <span>HTML</span>
+                <div class="progress">
+                    <div class="progress-bar html-bar">90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                      <i class="fa-brands fa-css3-alt css"></i>
+                      <span>CSS</span>
+                      <div class="progress">
+                        <div class="progress-bar css-bar">85%</div>
+                      </div>
+
+
         </div>
-      </div>
+        <div class="skill">
+            <i class="fa-brands fa-js js"></i>
+            <span>JavaScript</span>
+            <div class="progress">
+                <div class="progress-bar js-bar">75%</div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fa-brands fa-java java"></i>
+            <span>Java</span>
+            <div class="progress">
+                <div class="progress-bar java-bar">70%</div>
+            </div>
+        </div>
+        <div class="skill">
+             <i class="fa-solid fa-c c"></i>
+             <span>C</span>
+             <div class="progress">
+                <div class="progress-bar c-bar">65%</div>
 
-      <div class="buttons">
-        <button class="btn" onclick="showPage('resume')">My Resume</button>
-        <button class="btn" onclick="showPage('certificates')">My Certificates</button>
-      </div>
-
-      
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/dharsana-sharon-c-122a52326" target="_blank">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/dharsana56" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<section id="resume" class="page">
-  <div class="container">
-    <div class="card">
-      <h1>Upload Your Resume</h1>
-      <p>Select and attach your resume.</p>
-      <input type="file" accept=".pdf,.doc,.docx">
-
-      <div class="buttons">
-        <button class="btn" onclick="showPage('home')">⬅ Back</button>
-      </div>
-
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/dharsana-sharon-c-122a52326" target="_blank">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/dharsana56" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+             </div>
+        </div>
+        <div class="skill">
+            <i class="fa-brands fa-github github"></i>
+            <div class="progress">
+                <div class="progress-bar github-bar">75%</div>
+            </div>
+        </div>
 
 
-<section id="certificates" class="page">
-  <div class="container">
-    <div class="card">
-      <h1>Upload Your Certificates</h1>
-      <input type="file" multiple accept=".jpg,.png,.jpeg,.pdf">
-
-      <div class="buttons">
-        <button class="btn" onclick="showPage('home')">⬅ Back</button>
-      </div>
-
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/dharsana-sharon-c-122a52326" target="_blank">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/dharsana56" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
+    <section id="projects" class="projects-section">
+        <h2>projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>YOUTUBE</h3>
+                <p>
+                    Redesigned a youtube landing page changing making difference than the normal youtube for this i ahve used HTML,CSS,JavaScript .
+                </p>
+                <a href="https://github.com/dharsana56/codetech-ui-ux-task"target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Cargo app</h3>
+                <p>I Redesigned a cargo app a it is suitable to all screen types for this i used HTML,CSS,JavaScript</p>
+                                <a href="https://github.com/dharsana56/codetech-ui-ux-task"target="_blank">View on GitHub</a>
 
 
-<script>
-function showPage(id){
-  document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
-  document.getElementById(id).classList.add("active");
-}
-</script>
 
+            </div>
+            <div class="project-card">
+                <h3>Zomato</h3>
+                <p>I Redesigned a webpage of zomato as its is suitable for the mobile screen for this i have used HTML,CSS,JavaScript</p>
+                 <a href="https://github.com/dharsana56/codetech-ui-ux-task"target="_blank">View on GitHub</a>
+
+
+            </div>
+            <div class="project-card">
+                <h3>AR/VR Interface</h3>
+                <p>I have created AR/VR interface webpage</p>
+                                 <a href="https://github.com/dharsana56/codetech-ui-ux-task"target="_blank">View on GitHub</a>
+
+
+
+                
+            </div>
+
+        </div>
+    </section>
+    <section id="education" class ="education-section">
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="education-card">
+                <h3>Bachelor of Engineering(B.E)</h3>
+                <span>ST. JOSEPH'S INSTITUTE OF TECHNOLOGY</span>
+                <p>Major:Computer Science Engineering</p>
+            </div>
+            <div class="education-card">
+                <h3>Higher Secondary Education</h3>
+                <span>Christuraja Metric Hr.Sec.School Marthandam</span>
+                <p>Major:Computer Science</p>
+            </div>
+        </div>
+    </section>
+    <section id="Courses" class="Courses-section">
+        <h2>Courses</h2>
+        <div class="courses-list">
+            <div class="course-item">
+                <h3>Design Thinking - A Primer</h3>
+                <h3>Secured Elite</h3>
+                <p>NPTEL|IIT Madras</p>
+            </div>
+            <div class="course-item">
+                <h3>Python for Data Science</h3>
+                <h3>Secured Elite</h3>
+                <p>NPTEL|IIT Madras</p>
+            </div>
+            <div class="course-item">
+                <h3>HTML5</h3>
+                <p>Infosys Springboard</p>
+
+            </div>
+            <div class="course-item">
+                <h3>CSS3</h3>
+                <p>Infosys Springboard</p>
+            </div>
+            <div class="course-item">
+                <h3>Networking System</h3>
+                <p>Infosys Springboard</p>
+            </div>
+            <div class="course-item">
+                <h3>JavaScript</h3>
+                <p>Infosys Springboard</p>
+            </div>
+            
+        </div>
+    </section>
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-container">
+            <p>
+                 <i class="fa-solid fa-envelope"></i>
+                 <a href="mailto:dharsanasharon10d@gmail.com">dharsanasharon10d@gmail.com</a>
+            </p>
+            <p><i class="fa-solid fa-phone"></i>
+            <a href="tel:6385407003">6385407003</a></p>
+            <p>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <a href="https://www.linkedin.com/in/dharsana-sharon-c-122a52326?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSd9eBtLmRIaWkK314fgG0Q%3D%3D"target="_blank">Linkedin Profile</a>
+            </p>
+        </div>
+    </section>
 </body>
 </html>
